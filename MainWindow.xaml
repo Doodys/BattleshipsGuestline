@@ -1,0 +1,181 @@
+﻿<Window x:Class="Battleships.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Battleships"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="503.4" Width="445.249" ResizeMode="NoResize">
+    <Grid x:Name="gBattlefield" Margin="52,35,53,144">
+        <!--#region TextBoxGrid-->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <!--#region Row0-->
+        <TextBox x:Name="A1" Grid.Row="0" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="A2" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5" Grid.Column="1"/>
+        <TextBox x:Name="A3" Grid.Column="2" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="A4" Grid.Column="3" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="A5" Grid.Column="4" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="A6" Grid.Column="5" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="A7" Grid.Column="6" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="A8" Grid.Column="7" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="A9" Grid.Column="8" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="A10" Grid.Column="9" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <!--#endregion-->
+        <!--#region Row1-->
+        <TextBox x:Name="B1" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5" Grid.Row="1"/>
+        <TextBox x:Name="B2" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5" Grid.Column="1" Grid.Row="1"/>
+        <TextBox x:Name="B3" Grid.Column="2" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5" Grid.Row="1"/>
+        <TextBox x:Name="B4" Grid.Column="3" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5" Grid.Row="1"/>
+        <TextBox x:Name="B5" Grid.Column="4" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5" Grid.Row="1"/>
+        <TextBox x:Name="B6" Grid.Column="5" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5" Grid.Row="1"/>
+        <TextBox x:Name="B7" Grid.Column="6" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5" Grid.Row="1"/>
+        <TextBox x:Name="B8" Grid.Column="7" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5" Grid.Row="1"/>
+        <TextBox x:Name="B9" Grid.Column="8" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5" Grid.Row="1"/>
+        <TextBox x:Name="B10" Grid.Column="9" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5" Grid.Row="1"/>
+        <!--#endregion-->
+        <!--#region Row2-->
+        <TextBox x:Name="C1" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5" Grid.Row="2"/>
+        <TextBox x:Name="C2" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5" Grid.Row="2" Grid.Column="1"/>
+        <TextBox x:Name="C3" Grid.Column="2" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5" Grid.Row="2"/>
+        <TextBox x:Name="C4" Grid.Column="3" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5" Grid.Row="2"/>
+        <TextBox x:Name="C5" Grid.Column="4" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5" Grid.Row="2"/>
+        <TextBox x:Name="C6" Grid.Column="5" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5" Grid.Row="2"/>
+        <TextBox x:Name="C7" Grid.Column="6" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5" Grid.Row="2"/>
+        <TextBox x:Name="C8" Grid.Column="7" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5" Grid.Row="2"/>
+        <TextBox x:Name="C9" Grid.Column="8" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5" Grid.Row="2"/>
+        <TextBox x:Name="C10" Grid.Column="9" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5" Grid.Row="2"/>
+        <!--#endregion-->
+        <!--#region Row3-->
+        <TextBox x:Name="D1" Grid.Row="3" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="D2" Grid.Row="3" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5" Grid.Column="1"/>
+        <TextBox x:Name="D3" Grid.Column="2" Grid.Row="3" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="D4" Grid.Column="3" Grid.Row="3" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="D5" Grid.Column="4" Grid.Row="3" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="D6" Grid.Column="5" Grid.Row="3" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="D7" Grid.Column="6" Grid.Row="3" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="D8" Grid.Column="7" Grid.Row="3" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="D9" Grid.Column="8" Grid.Row="3" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="D10" Grid.Column="9" Grid.Row="3" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <!--#endregion-->
+        <!--#region Row4-->
+        <TextBox x:Name="E1" Grid.Row="4" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="E2" Grid.Row="4" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5" Grid.Column="1"/>
+        <TextBox x:Name="E3" Grid.Column="2" Grid.Row="4" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="E4" Grid.Column="3" Grid.Row="4" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="E5" Grid.Column="4" Grid.Row="4" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="E6" Grid.Column="5" Grid.Row="4" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="E7" Grid.Column="6" Grid.Row="4" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="E8" Grid.Column="7" Grid.Row="4" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="E9" Grid.Column="8" Grid.Row="4" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="E10" Grid.Column="9" Grid.Row="4" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <!--#endregion-->
+        <!--#region Row5-->
+        <TextBox x:Name="F1" Grid.Row="5" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="F2" Grid.Row="5" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5" Grid.Column="1"/>
+        <TextBox x:Name="F3" Grid.Column="2" Grid.Row="5" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="F4" Grid.Column="3" Grid.Row="5" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="F5" Grid.Column="4" Grid.Row="5" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="F6" Grid.Column="5" Grid.Row="5" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="F7" Grid.Column="6" Grid.Row="5" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="F8" Grid.Column="7" Grid.Row="5" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="F9" Grid.Column="8" Grid.Row="5" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="F10" Grid.Column="9" Grid.Row="5" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <!--#endregion-->
+        <!--#region Row6-->
+        <TextBox x:Name="G1" Grid.Row="6" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="G2" Grid.Row="6" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5" Grid.Column="1"/>
+        <TextBox x:Name="G3" Grid.Column="2" Grid.Row="6" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="G4" Grid.Column="3" Grid.Row="6" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="G5" Grid.Column="4" Grid.Row="6" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="G6" Grid.Column="5" Grid.Row="6" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="G7" Grid.Column="6" Grid.Row="6" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="G8" Grid.Column="7" Grid.Row="6" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="G9" Grid.Column="8" Grid.Row="6" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="G10" Grid.Column="9" Grid.Row="6" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <!--#endregion-->
+        <!--#region Row7-->
+        <TextBox x:Name="H1" Grid.Row="7" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="H2" Grid.Row="7" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5" Grid.Column="1"/>
+        <TextBox x:Name="H3" Grid.Column="2" Grid.Row="7" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="H4" Grid.Column="3" Grid.Row="7" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="H5" Grid.Column="4" Grid.Row="7" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="H6" Grid.Column="5" Grid.Row="7" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="H7" Grid.Column="6" Grid.Row="7" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="H8" Grid.Column="7" Grid.Row="7" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="H9" Grid.Column="8" Grid.Row="7" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="H10" Grid.Column="9" Grid.Row="7" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <!--#endregion-->
+        <!--#region Row8-->
+        <TextBox x:Name="I1" Grid.Row="8" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="I2" Grid.Row="8" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5" Grid.Column="1"/>
+        <TextBox x:Name="I3" Grid.Column="2" Grid.Row="8" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="I4" Grid.Column="3" Grid.Row="8" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="I5" Grid.Column="4" Grid.Row="8" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="I6" Grid.Column="5" Grid.Row="8" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="I7" Grid.Column="6" Grid.Row="8" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="I8" Grid.Column="7" Grid.Row="8" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="I9" Grid.Column="8" Grid.Row="8" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="I10" Grid.Column="9" Grid.Row="8" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <!--#endregion-->
+        <!--#region Row9-->
+        <TextBox x:Name="J1" Grid.Row="9" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="J2" Grid.Row="9" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5" Grid.Column="1"/>
+        <TextBox x:Name="J3" Grid.Column="2" Grid.Row="9" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="J4" Grid.Column="3" Grid.Row="9" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="J5" Grid.Column="4" Grid.Row="9" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="J6" Grid.Column="5" Grid.Row="9" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="J7" Grid.Column="6" Grid.Row="9" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="J8" Grid.Column="7" Grid.Row="9" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="J9" Grid.Column="8" Grid.Row="9" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+        <TextBox x:Name="J10" Grid.Column="9" Grid.Row="9" IsEnabled="False" Background="#FF37A4FF" RenderTransformOrigin="1,0.5"/>
+
+        <Grid HorizontalAlignment="Left" Height="105" Margin="0,52,0,-127" VerticalAlignment="Top" Width="332" Grid.ColumnSpan="10" Grid.Row="9" RenderTransformOrigin="1,0.5" FocusManager.FocusedElement="{Binding ElementName=tbInput}">
+            <TextBox x:Name="tbInput" HorizontalAlignment="Left" Height="23" Margin="14,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="34" RenderTransformOrigin="1,0.5"/>
+            <Label Content="Input" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top" RenderTransformOrigin="1,0.5"/>
+            <Button x:Name="bInput" Content="Kaboom!" HorizontalAlignment="Left" Margin="63,46,0,0" VerticalAlignment="Top" Width="55" Height="23" IsDefault="True" Click="bInput_Click"/>
+            <ListView x:Name="lvShips" HorizontalAlignment="Left" Height="105" Margin="262,0,0,0" VerticalAlignment="Top" Width="70">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Ships Left"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Grid>
+        <Label Content="   1        2        3        4        5        6        7        8        9        10" HorizontalAlignment="Left" Margin="0,-34,0,0" VerticalAlignment="Top" Grid.ColumnSpan="10" Width="332"/>
+        <Label Content="A" HorizontalAlignment="Left" Margin="-30,0,0,6" Width="26"/>
+        <Label Content="B" HorizontalAlignment="Left" Margin="-30,0,0,0" Width="26" Grid.Row="1"/>
+        <Label Content="C" HorizontalAlignment="Left" Margin="-30,0,0,0" Width="26" Grid.Row="2"/>
+        <Label Content="D" HorizontalAlignment="Left" Margin="-30,0,0,0" Width="26" Grid.Row="3"/>
+        <Label Content="E" HorizontalAlignment="Left" Margin="-30,0,0,0" Width="26" Grid.Row="4"/>
+        <Label Content="F" HorizontalAlignment="Left" Margin="-30,0,0,0" Width="26" Grid.Row="5"/>
+        <Label Content="G" HorizontalAlignment="Left" Margin="-30,0,0,0" Width="26" Grid.Row="6"/>
+        <Label Content="H" HorizontalAlignment="Left" Margin="-30,0,0,0" Width="26" Grid.Row="7"/>
+        <Label Content="I" HorizontalAlignment="Left" Margin="-30,0,0,0" Width="26" Grid.Row="8"/>
+        <Label Content="J" HorizontalAlignment="Left" Margin="-30,0,0,0" Width="26" Grid.Row="9"/>
+        <!--#endregion-->
+        <!--#endregion-->
+    </Grid>
+</Window>
